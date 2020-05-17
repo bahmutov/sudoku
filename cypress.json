@@ -3,7 +3,6 @@
   "componentFolder": "src",
   "testFiles": "**/*spec.js",
   "env": {
-    "failOnSnapshotDiff": true,
     "updateSnapshots": false
   }
 }
