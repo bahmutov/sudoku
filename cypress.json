@@ -1,5 +1,9 @@
 {
   "experimentalComponentTesting": true,
   "componentFolder": "src",
-  "testFiles": "**/*spec.js"
+  "testFiles": "**/*spec.js",
+  "env": {
+    "failOnSnapshotDiff": false,
+    "updateSnapshots": false
+  }
 }
