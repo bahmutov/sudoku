@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
 import moment from 'moment';
 
-const SudokuContext = createContext([ '0', () => {},
+export const SudokuContext = createContext([ '0', () => {},
                                       [], () => {},
                                       'Easy', () => {},
                                       moment(), () => {},
