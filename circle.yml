@@ -10,6 +10,9 @@ workflows:
       # "cypress" is the name of the imported orb
       # "run" is the name of the job defined in Cypress orb
       - cypress/run:
+          # use Cypress Docker image with Node 12
+          # https://github.com/cypress-io/cypress-docker-images/tree/master/base
+          executor: cypress/base-12
           post-steps:
               - store_artifacts:
                   path: cypress/snapshots
