@@ -8,6 +8,8 @@ describe('App', () => {
     mount(<App />)
 
     cy.log('**game sections**')
+    // ensure the board has rendered
+    cy.get('.game__board').should('be.visible').wait(1000)
     cy.get('.header').matchImageSnapshot('header')
     cy.get('.status__difficulty').matchImageSnapshot('difficulty')
     cy.get('.status__actions').matchImageSnapshot('actions')
