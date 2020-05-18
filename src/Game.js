@@ -43,7 +43,7 @@ export const Game = () => {
    * Creates a new game and initializes the state variables.
    */
   function _createNewGame(e) {
-    let [ temporaryInitArray, temporarySolvedArray ] = getUniqueSudoku(difficulty, e);
+    let [temporaryInitArray, temporarySolvedArray] = getUniqueSudoku(difficulty, e);
 
     setInitArray(temporaryInitArray);
     setGameArray(temporaryInitArray);
