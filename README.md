@@ -24,10 +24,10 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Use image tolerance value when comparing image snapshots](https://youtu.be/hTukgIQh81w)
 - [using a local Docker container to generate local snapshots](https://youtu.be/1XQbGtRITys)
 - [Running the same Docker container locally and on CI](https://youtu.be/FcoHSjrhXo4)
+- [Dealing with dynamic data by hiding it from the snapshot](https://youtu.be/ExihfuqqeiE)
 
 Still to record:
 
 - skipping snapshots in the interactive mode
 - making a pull request commit check for visual results
 - visual testing for the random Sudoku board itself
-- ignoring parts of the image during comparison

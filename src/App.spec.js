@@ -31,4 +31,11 @@ describe('App', () => {
     cy.tick(700 * 1000)
     cy.get('.status__time').matchImageSnapshot('timer-passed')
   })
+
+  it('checks the entire game', () => {
+    cy.clock()
+    mount(<App />)
+    cy.get('.game__cell').each($cell => $cell.css('opacity', '0'))
+    cy.get('.container').matchImageSnapshot('game-container')
+  })
 })
