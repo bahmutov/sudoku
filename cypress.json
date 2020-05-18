@@ -4,5 +4,6 @@
   "testFiles": "**/*spec.js",
   "env": {
     "updateSnapshots": false
-  }
+  },
+  "video": false
 }
