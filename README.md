@@ -2,11 +2,13 @@
 
 Sudoku game forked from [raravi/sudoku](https://github.com/raravi/sudoku).
 
-This fork is showing how to test game's components using Cypress and [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test) with open source visual image testing using [cypress-image-snapshot](https://github.com/palmerhq/cypress-image-snapshot).
+This fork is showing how to test game's components using Cypress, [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test), and the open source visual image diffing plugin [cypress-image-snapshot](https://github.com/palmerhq/cypress-image-snapshot).
 
 ![Visual test](images/visual.png)
 
-Watch the entire free series of videos testing step-by-step on Youtube in the playlist [Visually testing React component using open source tools](https://www.youtube.com/playlist?list=PLP9o9QNnQuAYhotnIDEUQNXuvXL7ZmlyZ).
+## Videos
+
+Watch the entire free series of videos explaining visual testing step-by-step in the playlist [Visually testing React component using open source tools](https://www.youtube.com/playlist?list=PLP9o9QNnQuAYhotnIDEUQNXuvXL7ZmlyZ).
 
 - [Writing first React component test](https://youtu.be/RqdXukwIdj0)
 - [Visual testing for Numbers element](https://youtu.be/hDTYBiKJBAY)
