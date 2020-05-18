@@ -26,8 +26,8 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Running the same Docker container locally and on CI](https://youtu.be/FcoHSjrhXo4)
 - [Dealing with dynamic data by hiding it from the snapshot](https://youtu.be/ExihfuqqeiE)
 - [Make Sudoku board deterministic](https://youtu.be/ZyBwxQ8OOKA)
+- [Local interactive workflow to skip snapshots](https://youtu.be/-M95yDr1Qfs)
 
 Still to record:
 
-- skipping snapshots in the interactive mode
 - making a pull request commit check for visual results
