@@ -1,18 +1,22 @@
-# sudoku
+# sudoku [![CircleCI](https://circleci.com/gh/bahmutov/sudoku/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/sudoku/tree/master)
 
-A Sudoku game in React!
+Sudoku game forked from [raravi/sudoku](https://github.com/raravi/sudoku).
 
-![license](https://img.shields.io/github/license/raravi/sudoku)&nbsp;&nbsp;![version](https://img.shields.io/github/package-json/v/raravi/sudoku)&nbsp;&nbsp;![dependencies](https://img.shields.io/depfu/raravi/sudoku)&nbsp;&nbsp;![last-commit](https://img.shields.io/github/last-commit/raravi/sudoku)
+This fork is showing how to test game's components using Cypress and [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test) with open source visual image testing using [cypress-image-snapshot](https://github.com/palmerhq/cypress-image-snapshot).
 
-This project aims to highlight the use of React to build a game and also maintaining state in one place. By having a 'Single Source of Truth', it becomes easier to keep updating the different parts of the UI based on state changes!
+![Visual test](images/visual.png)
 
-A fun way to learn React for those who are still in the beginning stages!
+Watch the entire free series of videos testing step-by-step on Youtube in the playlist [Visually testing React component using open source tools](https://www.youtube.com/playlist?list=PLP9o9QNnQuAYhotnIDEUQNXuvXL7ZmlyZ).
 
-Features:
-
-* Only functional components!
-* useEffect, useState hooks instead of state.
-* Simple use of `props`.
-* All the game logic resides in a single component.
-* Use CSS Custom properties to keep the stylesheet DRY.
-* Understand how functions can be sent down as `props` and consumed.
+- [Writing first React component test](https://youtu.be/RqdXukwIdj0)
+- [Visual testing for Numbers element](https://youtu.be/hDTYBiKJBAY)
+- [Visual test for selected number](https://youtu.be/5NuLQgdk-rU)
+- [Testing static sections of the game](https://youtu.be/D-u_ojVTgqQ)
+- [Testing timer display by controlling the application's clock](https://youtu.be/qQikRD_ygug)
+- [Update image snapshots](https://youtu.be/sd4MFgEUfPs)
+- [Style Numbers component](https://youtu.be/9hkyUhllTSw)
+- [Click event test for Numbers component](https://youtu.be/F1FC4hZpAX4)
+- [Mocking value passed via Context Provider](https://youtu.be/wvJgKz46a8A)
+- [Storing snapshot images](https://youtu.be/C_XVcftt14A)
+- [Running image tests on CI](https://youtu.be/gngLg1_J-9Q)
+- [Use image tolerance value when comparing image snapshots](https://youtu.be/hTukgIQh81w)
