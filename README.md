@@ -30,6 +30,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Clipping snapshots](https://youtu.be/ORf2mESaldY)
 - [Add wait before taking a snapshot](https://youtu.be/rcWwlVdarF0)
 - [Testing responsive design](https://youtu.be/j8yV3uKIJO0)
+- [Collected code coverage](https://youtu.be/HCDWGVdLQjA)
 
 Still to record:
 
