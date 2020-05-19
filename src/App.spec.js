@@ -36,6 +36,7 @@ describe('App', () => {
   it('checks the entire game', () => {
     cy.clock()
     mount(<App />)
+    cy.get('.game__cell--filled').should('have.length', 45)
     cy.get('.game__cell').each($cell => $cell.css('opacity', '0'))
     cy.get('.container').matchImageSnapshot('game-container')
   })
