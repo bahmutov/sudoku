@@ -27,6 +27,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Dealing with dynamic data by hiding it from the snapshot](https://youtu.be/ExihfuqqeiE)
 - [Make Sudoku board deterministic](https://youtu.be/ZyBwxQ8OOKA)
 - [Local interactive workflow to skip snapshots](https://youtu.be/-M95yDr1Qfs)
+- [Clipping snapshots](https://youtu.be/ORf2mESaldY)
 
 Still to record:
 
