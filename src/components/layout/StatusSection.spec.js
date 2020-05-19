@@ -11,6 +11,8 @@ describe('StatusSection', () => {
         <StatusSection />
       </div>
     )
+    // let's wait for everything to render
+    cy.wait(500)
 
     cy.get('.status__action-mistakes-mode')
       .find('input[type=checkbox]').should('not.be.checked')
