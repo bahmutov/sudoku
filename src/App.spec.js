@@ -51,5 +51,11 @@ describe('App', () => {
     mount(<App />)
     cy.get('.game__cell--filled').should('have.length', 45)
     cy.get('.container').matchImageSnapshot('same-game-container')
+
+    cy.viewport('iphone-6')
+    cy.get('.container').matchImageSnapshot('same-game-container-iphone6')
+
+    cy.viewport(250, 400)
+    cy.get('.container').matchImageSnapshot('same-game-container-250px')
   })
 })
