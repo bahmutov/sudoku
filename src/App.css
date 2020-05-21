@@ -14,6 +14,7 @@
   --color-grey-lighter: hsl(213, 30%, 79%);
   --color-orange: hsl(34, 26%, 89%);
   --color-orange-dark: hsl(34, 76%, 89%);
+  --slider-duration: 0.4s;
 }
 
 /**
@@ -338,8 +339,8 @@ body {
   bottom: 0;
   background-color: var(--color-grey-lighter);
   border-radius: 26px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: var(--slider-duration);
+  transition: var(--slider-duration);
 }
 
 .status__action-mistakes-mode-slider:before,
@@ -352,8 +353,8 @@ body {
   bottom: 3px;
   background-color: var(--background-color);
   border-radius: 50%;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: var(--slider-duration);
+  transition: var(--slider-duration);
 }
 
 input:checked + .status__action-mistakes-mode-slider,
