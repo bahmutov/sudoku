@@ -1,4 +1,4 @@
-# sudoku [![CircleCI](https://circleci.com/gh/bahmutov/sudoku/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/sudoku/tree/master)
+# sudoku [![gh status][gh image]][gh url] [![CircleCI](https://circleci.com/gh/bahmutov/sudoku/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/sudoku/tree/master)
 
 Sudoku game forked from [raravi/sudoku](https://github.com/raravi/sudoku).
 
@@ -35,3 +35,6 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 Still to record:
 
 - making a pull request commit check for visual results
+
+[gh image]: https://github.com/bahmutov/sudoku/workflows/master/badge.svg?branch=master
+[gh url]: https://github.com/bahmutov/sudoku/actions
