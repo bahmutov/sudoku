@@ -10,6 +10,7 @@ jobs:
 
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
+      # https://github.com/cypress-io/github-action
       - name: Cypress run 🧪
         uses: cypress-io/github-action@v1
         with:
