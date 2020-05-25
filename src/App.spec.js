@@ -1,8 +1,16 @@
 /// <reference types="cypress" />
+import rewiremock from 'rewiremock/webpack'
 import React from 'react'
 import { App } from './App'
 import { mount } from 'cypress-react-unit-test'
 import { getSudoku } from './solver/sudoku'
+import { getUniqueSudoku } from './solver/UniqueSudoku';
+// rewiremock('./solver/UniqueSudoku.js')
+//   .with({
+//     getUniqueSudoku: () => {
+//       throw new Error('here')
+//     }
+//   })
 
 describe('App', () => {
   it('looks good', () => {
@@ -71,5 +79,14 @@ describe('App', () => {
     cy.contains('.status__number', '7').click()
     cy.get('.game__cell').first().should('have.class', 'game__cell--highlightselected')
     cy.get('.container').matchImageSnapshot('same-game-container-move')
+  })
+
+  it.only('mocks import', () => {
+    // debugger
+    rewiremock('./solver/UniqueSudoku.js')
+      .with({})
+
+    console.log(getUniqueSudoku)
+    mount(<App />)
   })
 })

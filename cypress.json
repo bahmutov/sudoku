@@ -4,6 +4,7 @@
   "componentFolder": "src",
   "testFiles": "**/*spec.js",
   "env": {
+    "coverage": false,
     "updateSnapshots": false
   },
   "video": false
