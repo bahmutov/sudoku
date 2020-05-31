@@ -32,6 +32,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Testing responsive design](https://youtu.be/j8yV3uKIJO0)
 - [Collected code coverage](https://youtu.be/HCDWGVdLQjA)
 - [Using GitHub Actions](https://youtu.be/HRAEQ_6GU0g)
+- [Mocking ES6 module import for deterministic board](https://youtu.be/Ks7O4tuqyK8)
 
 Still to record:
 
