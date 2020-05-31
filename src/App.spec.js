@@ -3,7 +3,6 @@ import React from 'react'
 import { App } from './App'
 import { mount } from 'cypress-react-unit-test'
 import { getSudoku } from './solver/sudoku'
-import * as UniqueSudoku from './solver/UniqueSudoku'
 
 describe('App', () => {
   it('looks good', () => {
@@ -72,17 +71,5 @@ describe('App', () => {
     cy.contains('.status__number', '7').click()
     cy.get('.game__cell').first().should('have.class', 'game__cell--highlightselected')
     cy.get('.container').matchImageSnapshot('same-game-container-move')
-  })
-
-  it('mocks board creation', () => {
-    cy.fixture('init-array').then(initArray => {
-      cy.fixture('solved-array').then(solvedArray => {
-        cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
-      })
-    })
-    cy.clock()
-    mount(<App />)
-    cy.get('.game__cell--filled').should('have.length', 45)
-    cy.get('.container').matchImageSnapshot('same-game-mocked-sudoku')
   })
 })
