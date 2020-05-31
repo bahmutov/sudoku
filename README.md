@@ -33,6 +33,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Collected code coverage](https://youtu.be/HCDWGVdLQjA)
 - [Using GitHub Actions](https://youtu.be/HRAEQ_6GU0g)
 - [Mocking ES6 module import for deterministic board](https://youtu.be/Ks7O4tuqyK8)
+- [Post visual status check to GitHub](https://youtu.be/fNKWmPOpLD8)
 
 Still to record:
 
