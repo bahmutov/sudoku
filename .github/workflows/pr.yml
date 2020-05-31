@@ -22,3 +22,11 @@ jobs:
         with:
           name: snapshots
           path: cypress/snapshots
+
+      - name: Set commit status 🖼
+        run: |
+          node ./scripts/set-gh-check.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # make sure the commit status is shown for the merge commit in the PR
+          GH_SHA: ${{ github.event.after }}

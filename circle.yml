@@ -11,6 +11,9 @@ executors:
     # cypress/included:4.5.0 Docker image is built on top of this Docker image
     docker:
       - image: 'cypress/browsers:node12.13.0-chrome80-ff74'
+    # let's go through the tests and generate all diffs
+    environment:
+      CYPRESS_failOnSnapshotDiff: false
 
 workflows:
   build:
