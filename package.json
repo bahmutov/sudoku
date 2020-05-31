@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "cross-env": "7.0.2",
-    "cypress": "4.5.0",
+    "cypress": "4.7.0",
     "cypress-image-snapshot": "3.1.1",
     "cypress-react-unit-test": "4.4.0"
   }
