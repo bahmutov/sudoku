@@ -1,4 +1,4 @@
-# sudoku [![gh status][gh image]][gh url] [![CircleCI](https://circleci.com/gh/bahmutov/sudoku/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/sudoku/tree/master)
+# sudoku [![gh status][gh image]][gh url] [![CircleCI](https://circleci.com/gh/bahmutov/sudoku/tree/master.svg?style=svg)](https://circleci.com/gh/bahmutov/sudoku/tree/master) ![cypress version](https://img.shields.io/badge/cypress-4.5.0-brightgreen) ![cypress-react-unit-test version](https://img.shields.io/badge/cypress--react--unit--test-4.2.2-brightgreen)
 
 Sudoku game forked from [raravi/sudoku](https://github.com/raravi/sudoku).
 
