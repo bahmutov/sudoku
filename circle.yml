@@ -13,7 +13,7 @@ executors:
       - image: 'cypress/browsers:node12.13.0-chrome80-ff74'
     # let's go through the tests and generate all diffs
     environment:
-      failOnSnapshotDiff: false
+      CYPRESS_failOnSnapshotDiff: false
 
 workflows:
   build:
