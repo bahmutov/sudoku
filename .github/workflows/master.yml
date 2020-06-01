@@ -24,3 +24,9 @@ jobs:
         with:
           name: snapshots
           path: cypress/snapshots
+
+      - name: Store code coverage 📈
+        uses: actions/upload-artifact@v1
+        with:
+          name: coverage
+          path: coverage
