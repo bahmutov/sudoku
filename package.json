@@ -38,7 +38,7 @@
     "cross-env": "7.0.2",
     "cypress": "4.7.0",
     "cypress-image-snapshot": "3.1.1",
-    "cypress-react-unit-test": "4.4.0",
+    "cypress-react-unit-test": "4.4.2",
     "globby": "11.0.0",
     "got": "11.1.4",
     "pluralize": "8.0.0"
