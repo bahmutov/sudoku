@@ -29,9 +29,11 @@ describe('App', () => {
   it('shows the timer', () => {
     cy.clock()
     mount(<App />)
-    cy.get('.status__time').matchImageSnapshot('timer-zero')
+    cy.contains('.status__time', '00:00')
+      .matchImageSnapshot('timer-zero')
     cy.tick(700 * 1000)
-    cy.get('.status__time').matchImageSnapshot('timer-passed')
+    cy.contains('.status__time', '11:40')
+      .matchImageSnapshot('timer-passed')
   })
 
   it('checks the entire game', () => {
