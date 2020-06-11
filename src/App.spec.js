@@ -87,4 +87,20 @@ describe('App', () => {
     cy.get('.game__cell--filled').should('have.length', 45)
     cy.get('.container').matchImageSnapshot('same-game-mocked-sudoku')
   })
+
+  it('plays one move', () => {
+    cy.fixture('init-array').then(initArray => {
+      cy.fixture('solved-array').then(solvedArray => {
+        cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
+      })
+    })
+    cy.clock()
+    mount(<App />)
+    cy.get('.game__cell').first().click()
+    // we can even look at the solved array!
+    cy.contains('.status__number', '6').click()
+    cy.get('.game__cell').first()
+      .should('have.class', 'game__cell--highlightselected')
+    cy.get('.container').matchImageSnapshot('same-game-made-one-move')
+  })
 })

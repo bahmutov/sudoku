@@ -46,6 +46,7 @@ Small loops and demos
 - [Sudoku game](https://youtu.be/lxWEE0vDq6c)
 - [Responsive styles](https://youtu.be/w00vpIEVZPQ)
 - [Components in React DevTools](https://youtu.be/f9sbdiAEHxs)
+- [Sudoku deterministic board with one move](https://youtu.be/WcXZpqAKwQQ)
 
 [gh image]: https://github.com/bahmutov/sudoku/workflows/master/badge.svg?branch=master
 [gh url]: https://github.com/bahmutov/sudoku/actions
