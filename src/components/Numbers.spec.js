@@ -24,10 +24,12 @@ describe('Numbers', () => {
         </section>
       </div>
     );
-    // trying to assert every number in the DOM
+    // trying to assert every number in the DOM one by one
     // [1, 2, 3, 4, 5, 6, 7, 8, 9].forEach(k => {
     //   cy.contains('.status__number', k)
     // })
+    // or use a single image snapshot after making sure
+    // the component has been rendered into the DOM
     cy.get('.status__number').should('have.length', 9)
     cy.get('.status__numbers').matchImageSnapshot('all-numbers')
   })
