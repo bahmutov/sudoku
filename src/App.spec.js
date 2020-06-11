@@ -6,6 +6,15 @@ import { getSudoku } from './solver/sudoku'
 import * as UniqueSudoku from './solver/UniqueSudoku'
 
 describe('App', () => {
+  let initArray
+  let solvedArray
+  // https://github.com/bahmutov/find-webpack/issues/9
+  /* eslint-disable-next-line */
+  before(() => {
+    cy.fixture('init-array').then(arr => initArray = arr)
+    cy.fixture('solved-array').then(arr => solvedArray = arr)
+  })
+
   it('looks good', () => {
     mount(<App />)
 
@@ -89,11 +98,7 @@ describe('App', () => {
   })
 
   it('plays one move', () => {
-    cy.fixture('init-array').then(initArray => {
-      cy.fixture('solved-array').then(solvedArray => {
-        cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
-      })
-    })
+    cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
     cy.clock()
     mount(<App />)
     cy.get('.game__cell').first().click()
