@@ -39,6 +39,14 @@ Still to record:
 
 - making a pull request commit check for visual results
 
+## Misc videos
+
+Small loops and demos
+
+- [Sudoku game](https://youtu.be/lxWEE0vDq6c)
+- [Responsive styles](https://youtu.be/w00vpIEVZPQ)
+- [Components in React DevTools](https://youtu.be/f9sbdiAEHxs)
+
 [gh image]: https://github.com/bahmutov/sudoku/workflows/master/badge.svg?branch=master
 [gh url]: https://github.com/bahmutov/sudoku/actions
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
