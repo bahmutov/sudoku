@@ -102,10 +102,25 @@ describe('App', () => {
     cy.clock()
     mount(<App />)
     cy.get('.game__cell').first().click()
-    // we can even look at the solved array!
     cy.contains('.status__number', '6').click()
     cy.get('.game__cell').first()
       .should('have.class', 'game__cell--highlightselected')
     cy.get('.container').matchImageSnapshot('same-game-made-one-move')
+  })
+
+  it('plays to win', () => {
+    // start with all but the first cell filled with solved array
+    const almostSolved = [...solvedArray]
+    // by setting entry to "0" we effectively clear the cell
+    almostSolved[0] = '0'
+    cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([almostSolved, solvedArray])
+    cy.clock()
+    mount(<App />)
+    cy.get('.game__cell').first().click()
+    // we can even look at the solved array!
+    cy.contains('.status__number', solvedArray[0]).click()
+    // winning message displayed
+    cy.get('.overlay__text').should('be.visible')
+    cy.get('.container').matchImageSnapshot('game-solved')
   })
 })
