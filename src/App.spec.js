@@ -8,8 +8,6 @@ import * as UniqueSudoku from './solver/UniqueSudoku'
 describe('App', () => {
   let initArray
   let solvedArray
-  // https://github.com/bahmutov/find-webpack/issues/9
-  /* eslint-disable-next-line */
   before(() => {
     cy.fixture('init-array').then(arr => initArray = arr)
     cy.fixture('solved-array').then(arr => solvedArray = arr)

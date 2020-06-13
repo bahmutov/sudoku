@@ -2,7 +2,7 @@
 
 Sudoku game forked from [raravi/sudoku](https://github.com/raravi/sudoku).
 
-This fork is showing how to test game's components using Cypress, [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test), and the open source visual image diffing plugin [cypress-image-snapshot](https://github.com/palmerhq/cypress-image-snapshot).
+This fork is showing how to test game's components using Cypress, [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test), and the open source visual image diffing plugin [cypress-image-snapshot](https://github.com/palmerhq/cypress-image-snapshot). All images are stored in [cypress/snapshots](cypress/snapshots) folder.
 
 ![Visual test](images/visual.png)
 
@@ -37,6 +37,8 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 
 Still to record:
 
+- how to load fixture using `before` and using `import`
+- how to write a test for winning the game
 - making a pull request commit check for visual results
 
 ## Misc videos
