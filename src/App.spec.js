@@ -4,14 +4,16 @@ import { App } from './App'
 import { mount } from 'cypress-react-unit-test'
 import { getSudoku } from './solver/sudoku'
 import * as UniqueSudoku from './solver/UniqueSudoku'
+import initArray from '../cypress/fixtures/init-array.json'
+import solvedArray from '../cypress/fixtures/solved-array.json'
 
 describe('App', () => {
-  let initArray
-  let solvedArray
-  before(() => {
-    cy.fixture('init-array').then(arr => initArray = arr)
-    cy.fixture('solved-array').then(arr => solvedArray = arr)
-  })
+  // let initArray
+  // let solvedArray
+  // before(() => {
+  //   cy.fixture('init-array').then(arr => initArray = arr)
+  //   cy.fixture('solved-array').then(arr => solvedArray = arr)
+  // })
 
   it('looks good', () => {
     mount(<App />)
