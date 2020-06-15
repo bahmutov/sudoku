@@ -35,11 +35,11 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Mocking ES6 module import for deterministic board](https://youtu.be/Ks7O4tuqyK8)
 - [Refactor loading of fixtures to use imports](https://youtu.be/AcM4Uhp3yOw)
 - [Test to play the first move](https://youtu.be/bD3y94UB0_c)
+- [Write a test that wins the game](https://youtu.be/usLZnM4u3ZM)
 - [Post visual status check to GitHub](https://youtu.be/fNKWmPOpLD8)
 
 Still to record:
 
-- how to write a test for winning the game
 - making a pull request commit check for visual results
 
 ## Misc videos
