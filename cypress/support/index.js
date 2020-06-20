@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 if (Cypress.config('isInteractive')) {
   Cypress.Commands.add('matchImageSnapshot', () => {
