@@ -31,6 +31,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Clipping snapshots](https://youtu.be/ORf2mESaldY)
 - [Add wait before taking a snapshot](https://youtu.be/rcWwlVdarF0)
 - [Testing responsive design](https://youtu.be/j8yV3uKIJO0)
+- [Testing responsive design - alternative take](https://youtu.be/YTUk5f2YS74)
 - [Collected code coverage](https://youtu.be/HCDWGVdLQjA)
 - [Using GitHub Actions](https://youtu.be/HRAEQ_6GU0g)
 - [Mocking ES6 module import for deterministic board](https://youtu.be/Ks7O4tuqyK8)
