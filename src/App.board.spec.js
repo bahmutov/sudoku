@@ -28,4 +28,16 @@ describe('App', () => {
     cy.get('.game__cell').first().should('have.text', '6')
     cy.get('.container').matchImageSnapshot('first-move')
   })
+
+  it('looks right in different resolutions', () => {
+    cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
+    cy.clock()
+    mount(<App />)
+    cy.viewport(500, 700)
+      .wait(100)
+    cy.get('.container').matchImageSnapshot('tablet')
+    cy.viewport(300, 700)
+      .wait(100)
+    cy.get('.container').matchImageSnapshot('mobile')
+  })
 })
