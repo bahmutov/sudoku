@@ -10,6 +10,7 @@ This fork is showing how to test game's components using Cypress, [cypress-react
 
 Watch the entire free series of videos explaining visual testing step-by-step in the playlist [Visually testing React component using open source tools](https://www.youtube.com/playlist?list=PLP9o9QNnQuAYhotnIDEUQNXuvXL7ZmlyZ).
 
+- [Introduction](https://youtu.be/432Il-_hVrQ)
 - [Writing first React component test](https://youtu.be/RqdXukwIdj0)
 - [Visual testing for Numbers element](https://youtu.be/hDTYBiKJBAY)
 - [Visual test for selected number](https://youtu.be/5NuLQgdk-rU)
