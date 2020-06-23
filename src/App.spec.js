@@ -138,9 +138,13 @@ describe('App', () => {
     cy.contains('.status__time', '10:00')
 
     // resume the clock
-    cy.tick().then(clock => {
-      clock.restore()
-    })
+    // cy.tick().then(clock => {
+    //   clock.restore()
+    // })
+
+    // shortcut way to call "clock.restore("
+    cy.tick().invoke('restore')
+
     // the clock is restored to original value
     // thus the timer will start measuring again
     // from the original date passed to "cy.clock"
