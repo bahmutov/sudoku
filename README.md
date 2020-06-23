@@ -16,6 +16,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Visual test for selected number](https://youtu.be/5NuLQgdk-rU)
 - [Testing static sections of the game](https://youtu.be/D-u_ojVTgqQ)
 - [Testing timer display by controlling the application's clock](https://youtu.be/qQikRD_ygug)
+- [Restore synthetic clock](https://youtu.be/inLue14mxm0)
 - [Update image snapshots](https://youtu.be/sd4MFgEUfPs)
 - [Style Numbers component](https://youtu.be/9hkyUhllTSw)
 - [Click event test for Numbers component](https://youtu.be/F1FC4hZpAX4)
