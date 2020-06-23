@@ -2,6 +2,9 @@
 if (Cypress.browser.isHeaded) {
   describe('Mocking clock', () => {
     it('restores', () => {
+      // mock the clock with current timestamp
+      // so that when we restore it the elapsed time
+      // makes sense
       cy.clock(+ new Date())
       cy.visit('http://localhost:3000/sudoku')
       // make sure the application has rendered
