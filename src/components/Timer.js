@@ -21,6 +21,9 @@ export const Timer = (props) => {
 
   function getTimer() {
     let secondsTotal = currentTime.diff(timeGameStarted, 'seconds');
+    console.log('current time', currentTime)
+    console.log('game started at', timeGameStarted)
+    console.log('seconds', secondsTotal)
     if (secondsTotal <= 0)
       return '00:00';
     let duration = moment.duration(secondsTotal, 'seconds');

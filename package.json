@@ -17,7 +17,9 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "docker:run": "docker run -it -v $PWD:/e2e -w /e2e -e CYPRESS_updateSnapshots cypress/included:4.8.0",
-    "update:snapshots": "cross-env CYPRESS_updateSnapshots=true npm run docker:run"
+    "update:snapshots": "cross-env CYPRESS_updateSnapshots=true npm run docker:run",
+    "dev": "start-test 3000 cy:open",
+    "cy:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +43,7 @@
     "cypress-react-unit-test": "4.7.2",
     "globby": "11.0.0",
     "got": "11.1.4",
-    "pluralize": "8.0.0"
+    "pluralize": "8.0.0",
+    "start-server-and-test": "1.11.0"
   }
 }
