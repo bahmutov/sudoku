@@ -8,7 +8,7 @@ This fork is showing how to test game's components using Cypress, [cypress-react
 
 ## Information
 
-Read [Visual testing for React components using open source tools](https://glebbahmutov.com/blog/open-source-visual-testing-of-components/), browser [slides](https://slides.com/bahmutov/i-see-what-is-going-on)
+Read [Visual testing for React components using open source tools](https://glebbahmutov.com/blog/open-source-visual-testing-of-components/) and browse these [slides](https://slides.com/bahmutov/i-see-what-is-going-on).
 
 ## Videos
 
