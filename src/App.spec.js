@@ -108,6 +108,18 @@ describe('App', () => {
     cy.get('.container').matchImageSnapshot('same-game-made-one-move')
   })
 
+  it('takes demo screenshot', () => {
+    cy.viewport(1000, 800)
+    cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([initArray, solvedArray])
+    cy.clock()
+    mount(<App />)
+    cy.get('.game__cell').first().click()
+    cy.contains('.status__number', '6').click()
+    cy.get('.game__cell').first()
+      .should('have.class', 'game__cell--highlightselected')
+    cy.screenshot('played-a-move', {capture: 'viewport'})
+  })
+
   it('plays to win', () => {
     // start with all but the first cell filled with solved array
     const almostSolved = [...solvedArray]

@@ -59,6 +59,10 @@ Small loops and demos
 - [Sudoku deterministic board with one move](https://youtu.be/WcXZpqAKwQQ)
 - [Visual diffs as commit status](https://youtu.be/BDgqweqR36Y)
 
+## Demo
+
+![Screenshot of the game](cypress/screenshots/App.spec.js/played-a-move.png)
+
 [gh image]: https://github.com/bahmutov/sudoku/workflows/master/badge.svg?branch=master
 [gh url]: https://github.com/bahmutov/sudoku/actions
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
