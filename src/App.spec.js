@@ -139,6 +139,7 @@ describe('App', () => {
     // clicking the overlay starts the new game
     cy.get('@getUniqueSudoku').should('have.been.calledOnce')
     cy.get('.overlay__text').click()
+    cy.get('.overlay').should('not.be.visible')
     cy.get('@getUniqueSudoku').should('have.been.calledTwice')
   })
 
