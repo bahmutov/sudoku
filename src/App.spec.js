@@ -126,6 +126,7 @@ describe('App', () => {
     // by setting entry to "0" we effectively clear the cell
     almostSolved[0] = '0'
     cy.stub(UniqueSudoku, 'getUniqueSudoku').returns([almostSolved, solvedArray])
+      .as('getUniqueSudoku')
     cy.clock()
     mount(<App />)
     cy.get('.game__cell').first().click()
@@ -134,6 +135,11 @@ describe('App', () => {
     // winning message displayed
     cy.get('.overlay__text').should('be.visible')
     cy.get('.container').matchImageSnapshot('game-solved')
+
+    // clicking the overlay starts the new game
+    cy.get('@getUniqueSudoku').should('have.been.calledOnce')
+    cy.get('.overlay__text').click()
+    cy.get('@getUniqueSudoku').should('have.been.calledTwice')
   })
 
   it('restores the clock', () => {
