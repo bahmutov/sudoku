@@ -45,6 +45,7 @@ Watch the entire free series of videos explaining visual testing step-by-step in
 - [Write a test that wins the game](https://youtu.be/usLZnM4u3ZM)
 - [Post visual status check to GitHub](https://youtu.be/fNKWmPOpLD8)
 - [Factoring out Overlay component](https://youtu.be/NH1hOJQAkc0)
+- [Setting up Prettier](https://youtu.be/l-ikqcKdJHY)
 
 Still to record:
 
