@@ -3,6 +3,7 @@ import moment from 'moment'
 import { Header } from './components/layout/Header'
 import { GameSection } from './components/layout/GameSection'
 import { StatusSection } from './components/layout/StatusSection'
+import { Overlay } from './components/Overlay'
 import { Footer } from './components/layout/Footer'
 import { getUniqueSudoku } from './solver/UniqueSudoku'
 import { useSudokuContext } from './context/SudokuContext'
@@ -238,16 +239,7 @@ export const Game = () => {
         </div>
         <Footer />
       </div>
-      <div className= { overlay
-                        ? "overlay overlay--visible"
-                        : "overlay"
-                      }
-           onClick={onClickOverlay}
-      >
-        <h2 className="overlay__text">
-          You <span className="overlay__textspan1">solved</span> <span className="overlay__textspan2">it!</span>
-        </h2>
-      </div>
+      <Overlay overlay={overlay} onClickOverlay={onClickOverlay} />
     </>
   );
 }
